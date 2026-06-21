@@ -2,15 +2,15 @@
 <resources>
     <string name="app_name">CallBlocker</string>
 
-    <string name="status_enabled">Bloqueio ativado</string>
-    <string name="status_disabled">Bloqueio desativado</string>
-    <string name="status_description_enabled">Chamadas de números fora dos seus contatos serão bloqueadas automaticamente.</string>
-    <string name="status_description_disabled">Todas as chamadas estão passando normalmente.</string>
-    <string name="status_description_role_missing">Toque no botão para definir o CallBlocker como app de triagem de chamadas e ativar o bloqueio.</string>
+    <string name="status_enabled">Blocking enabled</string>
+    <string name="status_disabled">Blocking disabled</string>
+    <string name="status_description_enabled">Calls from numbers outside your contacts will be blocked automatically.</string>
+    <string name="status_description_disabled">All calls are going through normally.</string>
+    <string name="status_description_role_missing">Tap the button to set CallBlocker as your call screening app and enable blocking.</string>
 
-    <string name="button_enable">Ativar bloqueio</string>
-    <string name="button_disable">Desativar bloqueio</string>
+    <string name="button_enable">Enable blocking</string>
+    <string name="button_disable">Disable blocking</string>
 
-    <string name="permission_contacts_denied">Permissão de Contatos negada. Sem ela, nenhuma chamada será bloqueada.</string>
-    <string name="role_request_failed">Não foi possível ativar o CallBlocker como app de triagem de chamadas.</string>
+    <string name="permission_contacts_denied">Contacts permission denied. Without it, no calls will be blocked.</string>
+    <string name="role_request_failed">Could not set CallBlocker as the call screening app.</string>
 </resources>
