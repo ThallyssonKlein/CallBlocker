@@ -21,7 +21,7 @@ class CallBlockerService : CallScreeningService() {
         if (number.isNullOrBlank() || ContactsLookup.isNumberInContacts(this, number)) {
             allowCall(callDetails)
         } else {
-            blockCall(callDetails)
+            blockCall(callDetails, number)
         }
     }
 
@@ -35,7 +35,8 @@ class CallBlockerService : CallScreeningService() {
         respondToCall(callDetails, response)
     }
 
-    private fun blockCall(callDetails: Call.Details) {
+    private fun blockCall(callDetails: Call.Details, number: String) {
+        Prefs.addBlockedCallLog(this, number)
         val response = CallResponse.Builder()
             .setDisallowCall(true)
             .setRejectCall(true)

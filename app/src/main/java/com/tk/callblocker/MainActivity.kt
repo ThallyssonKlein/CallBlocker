@@ -1,6 +1,7 @@
 package com.tk.callblocker
 
 import android.app.role.RoleManager
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -34,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonToggle.setOnClickListener { onToggleClicked() }
+        binding.buttonViewLogs.setOnClickListener {
+            startActivity(Intent(this, LogsActivity::class.java))
+        }
 
         if (!ContactsLookup.hasContactsPermission(this)) {
             contactsPermissionLauncher.launch(android.Manifest.permission.READ_CONTACTS)
